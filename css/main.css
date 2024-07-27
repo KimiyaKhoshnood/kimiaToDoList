@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: darkolivegreen;
+    padding: 20px;
+    display: flex;
+    gap: 2px;
+}
+
+.left {
+    width: 320px;
+    background-color: white;
+    min-height: 90vh;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.right {
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    min-height: 90vh;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+.myId {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 40px 0;
+}
+
+.myId div {
+    background-color: lightgreen;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.myId span h2 {
+    font-size: 24px;
+}
+
+.line {
+    width: 90%;
+    height: 1px;
+    background-color: darkolivegreen;
+}
+
+.left h3 {
+    font-size: 30px;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.left ul {
+    width: 100%;
+    list-style: none;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.left ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 30px;
+}
+
+.left ul li .colorRed {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: crimson;
+}
+
+.left ul li .colorYellow {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: yellow;
+}
+
+.left ul li .colorGreen {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: forestgreen;
+}
+
+.left ul li .colorEmpty {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 1px solid;
+}
+
+
+.right div div {
+    width: 450px;
+    height: 80px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    overflow: auto;
+}
+
+.right div div div.colorRed {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: crimson;
+}
+
+.right div div div.colorYellow {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: yellow;
+}
+
+.right div div div.colorGreen {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: forestgreen;
+}
+
+.right div div input {
+    border: 0;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+}
+
+.right div div input:focus {
+    outline: 0;
+}
+
+.right div div span {
+    width: 100px;
+    height: 40px;
+    background-color: darkorange;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right div ul {
+    min-height: 350px;
+}
+
+.right div ul li {
+    width: 450px;
+    height: 60px;
+    background-color: white;
+    margin: 5px 0;
+    list-style: none;
+    border-radius: 15px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right div ul li span {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.right div ul li input {
+    border: 0;
+    background-color: whitesmoke;
+    height: 30px;
+    flex-grow: 1;
+}
+
+.right div ul li input:focus {
+    outline: 0;
+}
+
+.right div ul li div.colorRed {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: crimson;
+}
+
+.right div ul li div {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit {
+    background-color: darkolivegreen !important;
+}
+
+.delete {
+    background-color: crimson !important;
+}
+
+
+.editActive {
+    display: none !important;
+}
+
+.editNotActive {
+    display: flex !important;
+}
+
+.empty {
+    border: 1px solid red;
+}
